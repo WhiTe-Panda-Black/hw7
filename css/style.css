@@ -1,0 +1,270 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+
+body {
+    background-color: #fff;
+    font-size: 14px;
+    font-family: "Roboto Slab", sans-serif;
+    color: rgb(119, 119, 119);
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+/* HEADER */
+.page-header {
+    line-height: 1;
+    margin-bottom: 110px;
+}
+
+.page-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    min-height: 65px;
+}
+
+.site-logo {
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    color: #fed136;
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.navigation-item a {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    color: #222222;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navigation-item a:hover,
+.navigation-item a:focus {
+    color: #fed136;
+}
+
+/* SERVICES */
+.services {
+    margin-bottom: 122px;
+    text-align: center;
+}
+
+.services-title {
+    margin: 0;
+    margin-bottom: 6px;
+    padding: 0;
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(34, 34, 34);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 75px;
+}
+
+.services-suptitle {
+    margin: 0;
+    margin-bottom: 78px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.services-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services-item {
+    margin: 0;
+    padding: 0;
+    flex: 0 0 290px;
+    text-align: center;
+}
+
+.services-item::before {
+    content: '';
+    display: block;
+    margin: 0 auto 28px;
+    width: 72px;
+    height: 72px;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-basket::before {
+    background-image: url(../img/icon/icon-basket.png);
+}
+
+.icon-laptop::before {
+    background-image: url(../img/icon/icon-laptop.png);
+}
+
+.icon-locked::before {
+    background-image: url(../img/icon/icon-locked.png);
+}
+
+.services-item-title {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 18px;
+    color: #222222;
+    font-weight: 700;
+}
+
+.services-item-about {
+    margin: 0;
+    padding: 0;
+}
+
+/* CONTACT */
+.contact {
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+    text-align: center;
+    background-image: url(../img/map.png);
+    background-repeat: no-repeat;
+    background-position: 105% 88%;
+}
+
+.contact-title {
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 75px;
+    text-align: center;
+}
+
+.contact-title::before {
+    content: '';
+    display: block;
+    height: 94px;
+}
+
+.contact-suptitle {
+    margin: 0;
+    margin-bottom: 76px;
+    padding: 0;
+    color: #777;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.contact-list {
+    margin: 0;
+    margin-bottom: 29px;
+    padding: 0;
+    list-style: none;
+    height: 212px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-item input{
+    margin: 0;
+    padding: 0;
+    width: 457px;
+    min-height: 52px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+}
+.contact-item textarea {
+    resize: none;
+    margin: 0;
+    padding: 0;
+    width: 457px;
+    height: 211px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.contact-item-text::placeholder {
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    padding-top: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(187, 187, 187);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.button-send {
+    margin: 0;
+    margin-bottom: 115px;
+    padding: 0;
+    border: none;
+    width: 240px;
+    height: 65px;
+    border-radius: 3px;
+    background-color: rgb(254, 209, 54);
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: 1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
